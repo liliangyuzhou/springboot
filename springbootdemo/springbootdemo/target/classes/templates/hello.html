@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="common/header :: head"></th:block>
+</head>
+<body>
+<th:block th:include="common/header :: header"></th:block>
+<!--/*@thymesVar id="name" type="java.lang.String"*/-->
+<p th:text="'Hello！, ' + ${name} + '!'">3333</p>
+
+</div>
+<th:block th:include="common/footer :: footer"></th:block>
+
+</body>
+</html>
