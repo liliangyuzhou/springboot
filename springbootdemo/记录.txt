@@ -1,0 +1,13 @@
+原文博客：https://www.cnblogs.com/cmbt/p/9477487.html
+建表语句：
+CREATE DATABASE `mydb` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+CREATE TABLE `t_user` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `student` tinyint(1) DEFAULT NULL,
+  `sex` enum('MALE','FEMALE','SECRET') DEFAULT 'SECRET',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
